@@ -1240,8 +1240,7 @@ Our attentive and friendly staff will make sure that you have a memorable dining
 
         </ul>
 
-        <form action="" class="footer-form">
-
+        <form id="myForm"  action="http://localhost:3000/" method="POST"   class="footer-form">
           <p class="footer-list-title">Book a Table</p>
 
           <div class="input-wrapper">
@@ -1306,6 +1305,11 @@ Our attentive and friendly staff will make sure that you have a memorable dining
   <!-- 
     - custom js link
   -->
+  <script>
+   var form = document.getElementById("myForm");
+function handleForm(event) { event.preventDefault(); } 
+form.addEventListener('submit', handleForm);
+ </script>
   <script src="./assets/js/script.js" defer></script>
 
   <!-- 
